@@ -88,7 +88,7 @@ class Contact extends Component {
 
     render() {
 
-        const errors = this.validate(this.state.firstName, this.state,lastName, this.state.phoneNum, this.state.email);
+        const errors = this.validate(this.state.firstName, this.state.lastName, this.state.phoneNum, this.state.email);
 
         return (
             <div className="container">
@@ -134,7 +134,7 @@ class Contact extends Component {
                                         invalid={errors.firstName}
                                         onBlur={this.handleBlur("firstName")}
                                         onChange={this.handleInputChange} />
-                                    <FormFeedBack>{errors.firstName}</FormFeedBack>
+                                    <FormFeedback>{errors.firstName}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -146,7 +146,7 @@ class Contact extends Component {
                                         invalid={errors.lastName}
                                         onBlur={this.handleBlur("lastName")}
                                         onChange={this.handleInputChange} />
-                                    <FormFeedBack>{errors.lastName}</FormFeedBack>
+                                    <FormFeedback>{errors.lastName}</FormFeedback>
                                 </Col>                        
                             </FormGroup>
                             <FormGroup row>
@@ -158,7 +158,7 @@ class Contact extends Component {
                                         invalid={errors.phoneNum}
                                         onBlur={this.handleBlur("phoneNum")}
                                         onChange={this.handleInputChange} />
-                                    <FormFeedBack>{errors.phoneNum}</FormFeedBack>
+                                    <FormFeedback>{errors.phoneNum}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -170,7 +170,7 @@ class Contact extends Component {
                                         invalid={errors.email}
                                         onBlur={this.handleBlur("email")}
                                         onChange={this.handleInputChange} />
-                                    <FormFeedBack>{errors.email}</FormFeedBack>
+                                    <FormFeedback>{errors.email}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
